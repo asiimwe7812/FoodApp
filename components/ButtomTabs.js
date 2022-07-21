@@ -7,8 +7,9 @@ export default function ButtomTabs() {
       style={{
         flexDirection: "row",
         margin: 10,
-        marginHorizontal: 30,
+        marginHorizontal: 20,
         justifyContent: "space-between",
+        alignItems: "center",
       }}
     >
       <Icon icon="home" text="Home" />
@@ -26,7 +27,11 @@ const Icon = (props) => {
         <FontAwesome5
           name={props.icon}
           size={20}
-          style={{ marginButtom: 3, alignItems: "center" }}
+          style={{
+            marginButtom: 3,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         />
         <Text>{props.text}</Text>
       </View>
