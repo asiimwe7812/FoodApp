@@ -8,7 +8,7 @@ export default function ButtomTabs() {
         flexDirection: "row",
         margin: 10,
         marginHorizontal: 20,
-        justifyContent: "space-between",
+        justifyContent: "space-around",
         alignItems: "center",
       }}
     >
@@ -24,15 +24,7 @@ const Icon = (props) => {
   return (
     <TouchableOpacity>
       <View>
-        <FontAwesome5
-          name={props.icon}
-          size={20}
-          style={{
-            marginButtom: 3,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        />
+        <FontAwesome5 name={props.icon} size={20} />
         <Text>{props.text}</Text>
       </View>
     </TouchableOpacity>

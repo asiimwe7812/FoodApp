@@ -9,7 +9,7 @@ import SearchBar from "../components/SearchBar";
 const YELP_API_KEY =
   "yyylJH-NlvascsyBCozEullJHwjIskkOl5MWJyIGmRL0pLUKWOsMVfXQ1qvLSvAYxvwf0rgOo4hbVer3GXbtH_UyTW5iNLrCCRnMQ4drQEVaYZl5napylVr48aXWYnYx";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   const [city, setCity] = useState("SanDiego");
   const [restaurantData, setRestaurantData] = React.useState(localRestaurants);
   const [activeTab, setActiveTab] = useState("Delivery");
@@ -43,7 +43,10 @@ const Home = () => {
       </View>
       <ScrollView showsHorizontalScrollIndicator={false}>
         <Categories />
-        <RestaurantItem restaurantData={restaurantData} />
+        <RestaurantItem
+          restaurantData={restaurantData}
+          navigation={navigation}
+        />
       </ScrollView>
       <Divider width={1} />
       <ButtomTabs />
