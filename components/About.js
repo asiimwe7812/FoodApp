@@ -1,15 +1,15 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
 
-const yelpRestaurantInfo = {
-  name: "FarmHouse kitchen Thai cruise",
-  image:
-    "https://www.theserenaexperience.com/wp-content/uploads/2015/12/CGC3370-848x400.jpg",
-  price: "$$",
-  reviews: "1500",
-  rating: 4.5,
-  categories: [{ title: "Thai", title: "Comfort-Food" }],
-};
+// const yelpRestaurantInfo = {
+//   name: "FarmHouse kitchen Thai cruise",
+//   image:
+//     "https://www.theserenaexperience.com/wp-content/uploads/2015/12/CGC3370-848x400.jpg",
+//   price: "$$",
+//   reviews: "1500",
+//   rating: 4.5,
+//   categories: [{ title: "Thai", title: "Comfort-Food" }],
+// };
 
 export default function About(props) {
   const { name, image, price, reviews, rating, categories } =

@@ -1,5 +1,8 @@
 {
-  "expo": {
+  "expo": { 
+    "packagerOpts": {
+      "sourceExts": ["cjs"]
+    },
     "name": "Practice3",
     "slug": "Practice3",
     "version": "1.0.0",
@@ -10,6 +13,7 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+     
     },
     "updates": {
       "fallbackToCacheTimeout": 0
