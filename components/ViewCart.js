@@ -20,13 +20,13 @@ export default function ViewCart({ navigation }) {
 
   const addOrderTofirebase = () => {
     const db = firebase.firestore();
-    db.collections("orders").add({
+    db.collection("orders").add({
       items: items,
       restaurantName: restaurantName,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setModalVisible(false);
-    navigation.navigate("orderCompleted");
+    navigation.navigate("OrderCompleted");
   };
   const styles = StyleSheet.create({
     modalContainer: {
